@@ -1,3 +1,5 @@
+/// <reference types="@cloudflare/workers-types" />
+
 export class DurableObject {
   state: DurableObjectState;
   env: any;
