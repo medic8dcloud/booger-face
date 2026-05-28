@@ -3,8 +3,8 @@ main = "src/index.ts"
 compatibility_date = "2024-12-16"
 
 [env.production]
-route = "https://boogertime.download/*"
-zone_id = "your-zone-id-here"
+route = "https://moonshit.download/*"
+zone_id = "d60e9d672a23849f17f07d7e29f4d4bb"
 
 [[durable_objects.bindings]]
 name = "STATE"
