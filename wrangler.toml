@@ -14,9 +14,3 @@ migrations = [
 
 [env.production]
 route = "https://moonshit.download/*"
-zone_id = "d60e9d672a23849f17f07d7e29f4d4bb"
-
-[[env.production.durable_objects.bindings]]
-name = "STATE"
-class_name = "DurableObject"
-script_name = "booger-face"
