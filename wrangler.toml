@@ -2,15 +2,15 @@ name = "booger-face"
 main = "src/index.ts"
 compatibility_date = "2024-12-16"
 
-[[durable_objects.bindings]]
+[env.production]
+route = "https://moonshit.download/*"
+
+[[env.production.durable_objects.bindings]]
 name = "STATE"
 class_name = "DurableObject"
 script_name = "booger-face"
 
-[durable_objects]
+[env.production.durable_objects]
 migrations = [
   { tag = "v1", new_classes = ["DurableObject"] }
 ]
-
-[env.production]
-route = "https://moonshit.download/*"
