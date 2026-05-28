@@ -8,7 +8,7 @@ route = "https://moonshit.download/*"
 [[env.production.durable_objects.bindings]]
 name = "STATE"
 class_name = "DurableObject"
-script_name = "booger-face"
+script_name = "booger-face-production"
 
 [env.production.durable_objects]
 migrations = [
