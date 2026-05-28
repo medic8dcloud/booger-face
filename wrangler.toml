@@ -1,0 +1,17 @@
+name = "booger-face"
+main = "src/index.ts"
+compatibility_date = "2024-12-16"
+
+[env.production]
+route = "https://boogertime.download/*"
+zone_id = "your-zone-id-here"
+
+[[durable_objects.bindings]]
+name = "STATE"
+class_name = "DurableObject"
+script_name = "booger-face"
+
+[durable_objects]
+migrations = [
+  { tag = "v1", new_classes = ["DurableObject"] }
+]
